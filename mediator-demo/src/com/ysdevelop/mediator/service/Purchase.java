@@ -17,7 +17,7 @@ public class Purchase {
         Sale sale = new Sale();
 
         int saleStatus = sale.getSaleStatus();
-        // 如果
+        // 如果库存 大于 80 直接促销
         if (saleStatus > 80) {
 
         }
