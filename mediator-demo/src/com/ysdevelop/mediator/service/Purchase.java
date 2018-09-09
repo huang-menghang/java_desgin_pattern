@@ -17,9 +17,14 @@ public class Purchase {
         Sale sale = new Sale();
 
         int saleStatus = sale.getSaleStatus();
-        // 如果库存 大于 80 直接促销
+        // 如果销售数量大于80直接添加
         if (saleStatus > 80) {
-
+            System.out.println("采购电脑" + number + "台");
+            stock.increase(number);
+        } else {
+            int buynumber = number / 2;
+            System.out.println("采购电脑: " + buynumber + "台");
+            stock.increase(buynumber);
         }
 
 

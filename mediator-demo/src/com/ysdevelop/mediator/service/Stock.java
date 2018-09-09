@@ -11,6 +11,18 @@ public class Stock {
     private static int COMPUTER_NUMBER = 100;
 
     /**
+     * 减少库存数量
+     *
+     * @param number
+     */
+    public void decrease(int number) {
+        COMPUTER_NUMBER = COMPUTER_NUMBER - number;
+        System.out.println("库存数量: " + COMPUTER_NUMBER);
+
+    }
+
+
+    /**
      * 库存增加
      *
      * @param number
@@ -19,6 +31,7 @@ public class Stock {
         COMPUTER_NUMBER = COMPUTER_NUMBER + number;
         System.out.println("库存数量: " + COMPUTER_NUMBER);
     }
+
 
     /**
      * 获得库存数量
@@ -32,7 +45,7 @@ public class Stock {
     /**
      * 清空库存
      */
-    public void checkStock() {
+    public void clearStock() {
         Purchase purchase = new Purchase();
         Sale sale = new Sale();
         System.out.println("清空库存为: " + COMPUTER_NUMBER);

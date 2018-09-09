@@ -18,7 +18,8 @@ public class Sale {
             purchase.buyIBMcomputer(number);
         }
         System.out.println("销售IBM电脑" + number + "台");
-
+        // 减少库存
+        stock.decrease(number);
     }
 
     public void offSale() {
